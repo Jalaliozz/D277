@@ -1,1 +1,1 @@
-Project for class D277 - Front-End Web Development at Western Governors University.
+Project for D277 - Front-End Web Development atWGU. Check it out: https://jalaliozz.github.io/D277
