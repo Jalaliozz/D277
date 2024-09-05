@@ -27,21 +27,36 @@
         <h1>Contact Us</h1>
         <p>Please fill out the form below to leave a message.</p>
     </header>
-    <section>
-        <form>
-            <label for="firstName">First Name:</label>
-            <input type="text" id="firstName" name="firstName" placeholder="First Name" required autocomplete="given-name">
-            <label for="lastName">Last Name:</label>
-            <input type="text" id="lastName" name="lastName" placeholder="Last Name" required autocomplete="family-name">
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" placeholder="Email" required autocomplete="email">
-            <label for="confirmEmail">Confirm Email:</label>
-            <input type="email" id="confirmEmail" name="confirmEmail" placeholder="Confirm Email" required autocomplete="email">
-            <span id="error-message" style="display:none; color:red;"></span>
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" placeholder="Your message" required></textarea>
-            <button type="submit">Submit</button>
-        </form>
+    <section class="form-section">
+        <div class="form-container">
+            <form>
+                <h2>Get in Touch</h2>
+                <div class="form-group">
+                    <label for="firstName">First Name:</label>
+                    <input type="text" id="firstName" name="firstName" placeholder="First Name" required autocomplete="given-name">
+                </div>
+                <div class="form-group">
+                    <label for="lastName">Last Name:</label>
+                    <input type="text" id="lastName" name="lastName" placeholder="Last Name" required autocomplete="family-name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Email" required autocomplete="email">
+                </div>
+                <div class="form-group">
+                    <label for="confirmEmail">Confirm Email:</label>
+                    <input type="email" id="confirmEmail" name="confirmEmail" placeholder="Confirm Email" required autocomplete="email">
+                </div>
+                <span id="error-message" class="error-message"></span>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" placeholder="Your message" required maxlength="400"></textarea>
+                    <span id="character-count">0/400</span>
+                    <div id="popup-error" class="popup-error">Message cannot exceed 400 characters!</div>
+                </div>
+                <button type="submit" class="submit-button">Submit</button>
+            </form>
+        </div>
     </section>
     <aside>
         <h3>Contact Information</h3>
@@ -58,7 +73,6 @@
                 <li><a href="edmonton.html">Edmonton</a></li>
                 <li><a href="calgary.html">Calgary</a></li>
                 <li><a href="banff.html">Banff</a></li>
-                <li><a href="form.html">Contact Us</a></li>
             </ul>
         </nav>
         <p>&copy; 2024 Alberta Tourism. All rights reserved.</p>
