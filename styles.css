@@ -6,7 +6,6 @@ body {
     background-color: #f4f4f4;
 }
 
-
 header {
     background-color: #4CAF50;
     color: white;
@@ -23,7 +22,6 @@ header p {
     margin: 5px 0 20px;
 }
 
-
 nav ul {
     list-style-type: none;
     padding: 0;
@@ -35,7 +33,6 @@ nav ul {
 nav ul li {
     margin: 0 10px;
 }
-
 
 nav ul li a {
     color: white;
@@ -55,12 +52,9 @@ nav ul li a:hover {
     background-color: #34495e;
 }
 
-
 section {
     display: flex;
-
     align-items: flex-start;
-
     padding: 20px;
     margin: 20px;
     background-color: #fff;
@@ -69,20 +63,18 @@ section {
 
 .content {
     flex: 1;
-
     margin-right: 20px;
-
     max-width: 50%;
-
+    float: left;
+    /* Added float property */
 }
 
 img {
     max-width: 50%;
-
     height: auto;
-
+    float: right;
+    /* Added float property */
 }
-
 
 h1,
 h2,
@@ -98,20 +90,15 @@ p {
     line-height: 1.6;
 }
 
-
 .form-section {
     background-color: #f4f4f4;
     padding: 40px 20px;
-
 }
 
 .form-container {
     width: 100%;
-
     max-width: 800px;
-
     margin: 0 auto;
-
     background-color: #fff;
     padding: 30px;
     border-radius: 5px;
@@ -125,16 +112,13 @@ form {
 
 h2 {
     text-align: center;
-
     margin-bottom: 20px;
-
 }
 
 .form-group {
     margin-bottom: 20px;
     display: flex;
     flex-direction: column;
-
 }
 
 label {
@@ -149,7 +133,6 @@ textarea {
     border-radius: 3px;
     font-size: 16px;
     width: 100%;
-
 }
 
 textarea {
@@ -177,7 +160,6 @@ textarea {
     background-color: #45a049;
 }
 
-
 table {
     width: 100%;
     border-collapse: collapse;
@@ -196,7 +178,6 @@ td {
     text-align: left;
 }
 
-
 aside {
     padding: 20px;
     background-color: #fff;
@@ -204,7 +185,6 @@ aside {
     margin: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-
 
 footer {
     background-color: #333;
@@ -232,6 +212,20 @@ footer nav ul li a:hover {
     text-decoration: underline;
 }
 
+#unique-section {
+    background-color: #e0e0e0;
+    padding: 20px;
+}
+
+.relative-container {
+    position: relative;
+}
+
+.absolute-element {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
 
 @media (max-width: 768px) {
     .menu-toggle {
@@ -267,17 +261,12 @@ footer nav ul li a:hover {
 
     section {
         flex-direction: column;
-
         align-items: center;
-
     }
 
     img {
         margin-left: 0;
-
         margin-top: 20px;
-
         max-width: 100%;
-
     }
 }
